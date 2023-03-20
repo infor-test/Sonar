@@ -1,12 +1,12 @@
 pipeline{
     agent any
-    environment {
+    /*environment {
         PATH = "$PATH:C:\Users\kisho\OneDrive\Desktop\mavenins\apache-maven-3.8.6\bin"
-    }
+    }*/
     stages{
        stage('GetCode'){
             steps{
-                git 'git@github.com:infor-test/Sonar.git'
+                git 'https://github.com/ravdy/sonar-project.git'
             }
          }        
        stage('Build'){
